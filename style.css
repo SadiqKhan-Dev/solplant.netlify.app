@@ -1,3 +1,28 @@
+/* 
+
+
+Importation of all font which require in the website
+
+
+*/
+
+/* Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Playfair */
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -123,14 +148,6 @@
     --bs-highlight-bg: #fff3cd;
 
 }
-
-
-
-
-
-
-
-
 
 
 .navt {
@@ -466,4 +483,262 @@
   .slider-wrapper .slider-item .slide-content > * {
     max-width: 100%;
   }
+}
+
+/******************       Best Sellings         **********************************/
+
+
+.best-sell {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 1116px;
+  height: 546px;
+  font-size: 16px;
+  margin: 150px 130px;
+  overflow: hidden; /* prevents zoom overflow */
+
+}
+
+.selling-overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+    transition-property: 1;
+    transition-duration: 2;
+    transition-timing-function: 1;
+    transition-delay: 1;
+    transition-behavior: 1;
+}
+
+
+/* Image wrapper */
+.best-sell .img {
+  overflow: hidden;
+}
+
+.best-sell img {
+  width: 1116px;
+  height: 546px;
+  transition: transform 0.5s ease; /* smooth zoom */
+}
+
+.best-sell:hover img {
+  transform: scale(1.1); /* zoom on hover */
+}
+
+
+/* Text container */
+.sell-ct {
+  position: absolute;
+  text-align: center;
+  color: #212529;
+  left: 50%;
+}
+
+/* Text styling */
+.sell-ct p {
+  font-size: 40px;
+  color: var(--background);
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: color 0.4s ease;
+}
+
+.sell-ct h2 {
+  font-size: 80px;
+  font-family: 'Playfair Display', serif;
+  color: #212529;
+  margin: 0 0 40px;
+  transition: color 0.4s ease;
+}
+
+/* Button */
+.sell-ct .button {
+  position: relative;
+  display: inline-block;
+  padding: 20px 50px;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  color: var(--bicon);
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 6px;
+  transition: color 0.4s ease;
+}
+
+/* Button background using ::before */
+.sell-ct .button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--background);
+  z-index: -1;
+  transition: background-color 0.4s ease;
+  border-radius: inherit;
+}
+
+/* Hover effects on whole section */
+/* .best-sell:hover img {
+  transform: scale(1.2); 
+} */
+
+.best-sell:hover .sell-ct p,
+.best-sell:hover .sell-ct h2,
+.best-sell:hover {
+  color: #fff; 
+  transition: color 0.4s ease;
+}
+
+.best-sell:hover {
+  color: #fff;
+  background-color: #5D8834;
+}
+
+
+
+
+
+
+
+
+
+
+.selling-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.selling-img:hover .selling-wrap {
+  color: white;
+  transition: 0.5s;
+}
+.selling-img:hover .selling-wrap img {
+  transition: 0.5s;
+  scale: 1.2;
+}
+.selling-img:hover .selling-wrap .heading-3 {
+  color: white;
+  transition: 0.5s;
+}
+
+.selling-img:hover .selling-overlay {
+  opacity: 1;
+  background-color: rgba(93, 136, 52, 0.5);
+}
+
+.selling-card-text-1 {
+  z-index: 1;
+  position: absolute;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 61px;
+  text-align: center;
+}
+.selling-card-text-1 .heading-3 {
+  margin-bottom: 10px;
+  color: #558b2f;
+  transition: 0.5s;
+}
+.selling-card-text-1 .heading-4 {
+  margin-bottom: 30px;
+}
+.selling-card-text-1 .button-1 {
+  margin: 0 auto;
+}
+.selling-card-text-1 .button-1 a {
+  color: white;
+  text-decoration: none;
+}
+.selling-card-text-1 .button-1:hover a {
+  color: #25282b;
+}
+
+.selling-card-text-2 {
+  z-index: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+}
+
+.selling-card-text-3 {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  right: -80px;
+  display: flex;
+  height: 100%;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+}
+.selling-card-text-3 .heading-5 {
+  rotate: 90deg;
+}
+
+.selling-card-text-4 {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: -80px;
+  display: flex;
+  height: 100%;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+}
+.selling-card-text-4 .heading-5 {
+  rotate: 270deg;
+}
+
+.selling-card-text-5 {
+  z-index: 1;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+}
+
+.selling-card-text-6 {
+  z-index: 1;
+  position: absolute;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: 72px;
+  left: 76px;
+  text-align: center;
+}
+.selling-card-text-6 .heading-4 {
+  margin-bottom: 5px;
+}
+.selling-card-text-6 .heading-3 {
+  margin-bottom: 30px;
+  color: #558b2f;
+  transition: 0.5s;
+}
+.selling-card-text-6 .button-1 {
+  margin: 0 auto;
+}
+.selling-card-text-6 .button-1 a {
+  color: white;
+  text-decoration: none;
+}
+.selling-card-text-6 .button-1:hover a {
+  color: #25282b;
 }
