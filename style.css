@@ -352,13 +352,13 @@ Importation of all font which require in the website
   color: #000;
   width: 0;
   padding: 13px 0;
-  font-size: 0.8rem;
+  font-size: 18px;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   transition: 0.5s ease;
   opacity: 0;
   white-space: nowrap;
@@ -371,7 +371,13 @@ Importation of all font which require in the website
     width: 250px;
     opacity: 1;
   }
+
 }
+
+.slide-button {
+  border: 1px solid #000;
+}
+
 .slider-item .slide-content .slide-button span {
   opacity: 100;
 }
@@ -380,7 +386,7 @@ Importation of all font which require in the website
 }
 .slider-item .slide-content .slide-button:hover {
   color: #000;
-  background: #fff;
+  /* background: #fff; */
 }
 .slider-container .slider-controls {
   position: absolute;
@@ -532,6 +538,7 @@ Importation of all font which require in the website
 
 .best-sell:hover img {
   transform: scale(1.1); /* zoom on hover */
+  background-color: var(--background);
 }
 
 
@@ -600,10 +607,11 @@ Importation of all font which require in the website
   transition: color 0.4s ease;
 }
 
-.best-sell:hover {
+/* .best-sell:hover {
   color: #fff;
-  background-color: #5D8834;
-}
+  background-color: #c8eea5;
+  opacity: 1;
+} */
 
 
 
